@@ -7,8 +7,8 @@ Fetch lyrics corresponding to each music file in the given directory
 Dependencies
 =============
 
-  tagpy 2013.1
-  mutagen v1.20
+    tagpy 2013.1
+    mutagen v1.20
 
 
 Install Dependencies
@@ -43,4 +43,5 @@ TODO
 =============
 
 Add multiple level support
+
 Use non-blocking calls to fetch lyrics to speed up the process
