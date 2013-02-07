@@ -16,21 +16,21 @@ Install Dependencies
 
 Install tagpy
 
-  pip install tagpy
+    pip install tagpy
 
 Install mutagen
 
-  pip install mutagen
+    pip install mutagen
 
 
 Usage
 =============
 
-  python attach-lyrics.py <path-to-folder>
+    python attach-lyrics.py <path-to-folder>
 
 Example
   
-  python attach-lyrics.py "/home/user/songs"
+    python attach-lyrics.py "/home/user/songs"
 
 
 Contact
