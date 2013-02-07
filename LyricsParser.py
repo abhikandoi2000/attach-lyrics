@@ -6,6 +6,7 @@
 
 import string
 import urllib2
+import re
 
 class Parser:
 	#initialize the parser object
@@ -74,12 +75,14 @@ class Parser:
 			return "lyrics end not found"
 		lyrics = lyrics[:end]
 
-		#remove unwanted data
+		'''remove unwanted data'''
+		#remove paragraph tags for instrumental songs
+		lyrics = re.sub(r'<p>(.*)<\/p>', r'\1', lyrics)
+		#remove div tag for some special cases
 		lyrics = lyrics.replace('<div id="lyrics" class="SCREENONLY">', '')
 		lyrics = lyrics.replace("\n", "")
 		lyrics = lyrics.replace("<br />", "\n")
 		lyrics = lyrics.strip()
 		self.lyrics = lyrics
-		print lyrics
 
 		return lyrics
