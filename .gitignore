@@ -1,2 +1,12 @@
+# files
 *.sublime-*
 *.pyc
+links.txt
+hindi.py
+example.py
+LyricsList
+
+# folders
+lib/
+sample/
+scripts/
